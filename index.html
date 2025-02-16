@@ -26,10 +26,11 @@
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
+          <!-- Make the Blog link scroll to the blog section -->
           <li><a href="#blog">Blog</a></li>
           <li><a href="#categories">Categories</a></li>
           <li><a href="about.html">About</a></li>
-          <!-- Update Contact Link to Scroll to Footer Section -->
+          <!-- Make the Contact link scroll to the footer -->
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -38,7 +39,8 @@
     <!-- Hero Section -->
     <section id="hero">
       <h1 class="hero-heading">Rev Your Engines <span>Explore the World of Cars</span></h1>
-      <button class="cta-btn">Start Reading</button>
+      <!-- Scroll to Blog section when clicked -->
+      <button class="cta-btn" onclick="document.getElementById('blog').scrollIntoView({behavior: 'smooth'});">Start Reading</button>
     </section>
 
     <!-- Blog Section -->
